@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <main class="app">
+        <section class="greeting">
+            <h2 class="title">
+                What's Up, <input type="text" id="name" placeholder="put your name">
+            </h2>
+        </section>
+
+        <section class="create-todo">
+            <form id="new-todo-form">
+                <h3>What do you need to do today?</h3>
+                <input 
+                    type="text" 
+                    name="content" 
+                    id="content" 
+                    placeholder="e.g: study HTML + CSS">
+
+                <div class="options">
+
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="category" 
+                            id="category1" 
+                            value="studies">
+                            <span class="bubble studies"></span>
+                            <div class="studies">Studies</div>
+                    </label>
+
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="category" 
+                            id="category2" 
+                            value="personal">
+                            <span class="bubble personal"></span>
+                            <div class="personal">Pesonal</div>
+                    </label>
+                </div>
+
+                <input type="submit" value="ADD TO-DO LIST">
+            </form>
+        </section>
+
+        <section class="todo-list">
+            <h3 class="teste">Your To-do List:</h3>
+            <div class="list" id="todo-list">
+                <div class="todo-item done">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble studies"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="Study HTML + CSS" readonly>
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">EDIT</button>
+                        <button class="delete">DELETE</button>
+                    </div>
+                </div>
+
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble personal"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="Unblock my card" readonly>
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">EDIT</button>
+                        <button class="delete">DELETE</button>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
