@@ -209,7 +209,8 @@ input:checked ~ .bubble::after {
 
 .todo-item .actions {
     display: flex;
-    align-items: center;
+    flex: 1 1 0%;
+    justify-content: flex-end;
     gap: 0.563rem;
 }
 
@@ -228,4 +229,11 @@ input:checked ~ .bubble::after {
 .todo-item.done .todo-content input {
     text-decoration: line-through;
     color: var(--exemplo);
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --preencher: rgba(215, 209, 248, 0.659);
+        --to-dos: #d6c5ec;
+    }
 }
