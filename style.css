@@ -233,7 +233,7 @@ input:checked ~ .bubble::after {
 
 @media only screen and (max-width: 768px) {
     :root {
-        --preencher: rgba(215, 209, 248, 0.659);
+        --preencher: rgb(216, 193, 236));
         --to-dos: #d6c5ec;
     }
 }
